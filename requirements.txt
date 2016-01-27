@@ -1,0 +1,11 @@
+# list dependencies here
+# pip install -r requirements.txt
+--index https://pypi.python.org/simple/
+
+# pymongo and bson are conflict
+# pymongo ships with its own version of bson not compatible with the bson package.
+# - http://stackoverflow.com/a/12983651/196206
+pymongo == 3.2
+# Fabric related
+Fabric==1.10.2
+fabric-virtualenv == 0.2.1
